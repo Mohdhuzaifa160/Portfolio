@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- Local Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ✅ Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Huzaifa</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#about">About me</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#contact">Contact us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- ✅ Navbar End -->
+
+<!-- ✅ Hero Section -->
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h1>Hi, I'm <span id="typed-text"></span></h1>
+    <p class="lead">Welcome to my portfolio!</p>
+    <div class="hero-button mt-4">
+      <a href="#about" class="btn btn-primary">About me</a>
+      <a href="#" class="btn btn-outline-light">Resume</a>
+    </div>
+  </div>
+    </div>
+  </div>
+</section>
+<!-- About Section -->
+<section class="about-section" id="about">
+  <div class="about-container">
+     <!-- <div class="about-img">
+      <img src="assets/huzaifa.jpg" alt="Huzaifa" />
+      </div> -->
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>
+        I'm <strong>Mohd Huzaifa</strong>, an aspiring Full Stack Developer currently pursuing a Diploma in Information Technology. I enjoy building modern, responsive websites and experimenting with AI and automation projects.
+      </p>
+      <p>
+        Tools & Technologies I work with:
+      </p>
+      <ul class="tech-stack">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>Firebase</li>
+        <li>Python</li>
+        <li>Termux</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- Skills section <-->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">MySQL</div>
+      <div class="skill-card">MariaDB</div>
+      <div class="skill-card">C Programming</div>
+      <div class="skill-card">Python Programming</div>
+      <div class="skill-card">Bootstrap</div>
+      <div class="skill-card">FastAPI</div>
+    </div>
+  </div>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+     <div class="project-card">
+        <h3>Huzenix</h3>
+        <p>A modern web project—details on GitHub.</p>
+        <a href="https://github.com/mohdhuzaifa160/Huzenix-.git" target="_blank">View on GitHub</a>
+      </div>
+     
+      <div class="project-card">
+        <h3>File Organizer (Python)</h3>
+        <p>A Python script to automatically organize files into folders based on type.</p>
+        <a href="https://github.com/Mohdhuzaifa160/File-organizer-Python-.git" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Scientific Calculator</h3>
+        <p>A full-featured scientific calculator built with Python.</p>
+        <a href="https://github.com/Mohdhuzaifa160/Scientific-calculator-.git" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3>More on GitHub</h3>
+        <p>Check out many more projects in my GitHub repository.</p>
+        <a href="https://github.com/mohdhuzaifa160" target="_blank">Visit GitHub Profile</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Contact Us -->
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>Have a project or just want to say hi? Feel free to reach out!</p>
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="contact" />
+  <input type="hidden" name="redirect" value="/thankyou.html">
+
+  <p hidden>
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
+
+  <input type="text" name="name" required placeholder="Your Name">
+  <input type="email" name="email" required placeholder="Your Email">
+  <textarea name="message" required placeholder="Your Message"></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
+  </div>
+</section>
+
+<!-- ✅ Scripts -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="js/script.js"></script>
+<!--Footer-->
+<footer>
+  <div class="footer-container">
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://github.com/mohdhuzaifa160" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://in.linkedin.com/in/mohd-huzaifa-it" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://x.com/MohdHuzifa27207?t=qXj-cNnKlLBt-6tlp1V08A&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="mailto:mohdhuzaifa160@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://discord.com/users/764484139545788458" target="_blank"><i class="fab fa-discord"></i></a>
+     <a href="https://www.instagram.com/mohdhuzaifa26207" target="_blank"><i class="fab fa-instagram"></i></a>
+     <a href="https://gitlab.com/mohdhuzaifa" target="_blank"><i class="fab fa-gitlab"></i></a>
+    
+    </div>
+    <p>&copy; 2025 Mohd Huzaifa. All Rights Reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
